@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="header_right_mobile">
+                <h1 onclick=menuClose()><i class="fa fa-xmark"></i></h1>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+
+
+        <div class="header">
+            <div class="header_left">
+                <h1>Portfolio</h1>
+            </div>
+            
+            <div class="header_right">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="contact.html">CONTACT</a>
+                <h1 onclick=menu()><i class="fa fa-bars"></i></h1>
+            </div>
+        </div>
+        <div class="projects_heading">
+            <h1>PROJECTS</h1>
+        </div>
+
+        <div class="projects_main">
+            <div class="projects_main_card">
+                <a href="https://snap-thoughts-six.vercel.app/"><h2>Basic Chat App</h2></a>
+            </div>
+
+            <div class="projects_main_card">
+                <a href="https://play.google.com/store/apps/details?id=black.planes"><h2>Black Planes Game</h2></a>
+            </div>
+
+            <div class="projects_main_card">
+                <a href="https://github.com/AjayDevarakonda2024/weflex"><h2>basic movie web application(github)</h2></a>
+            </div>
+
+            <div class="projects_main_card">
+                <a href="https://github.com/AjayDevarakonda2024/vaaradhifarms"><h2>vaaradhifarms website(github)</h2></a>
+            </div>
+
+            <div class="projects_main_card">
+                <a href="https://github.com/AjayDevarakonda2024/rock-paper-scissors"><h2>Rock Paper Sissor game(github)</h2></a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/ajay-devarakonda-08ba01300/" target="_blank"><i class="fab fa-linkedin"></i> </a>
+            <a href="https://www.instagram.com/ajaydevarakondaartz/" target="_blank"><i class="fab fa-instagram"></i> </a>
+            <a href="https://github.com/AjayDevarakonda2024" target="_blank"><i class="fab fa-github"></i> </a>
+        </div>
+
+        <script>
+            let menu = ()=> {
+                document.querySelector('.header_right_mobile').style.display = 'flex';
+            }
+
+            let menuClose = ()=> {
+                document.querySelector('.header_right_mobile').style.display = 'none';
+            }
+        </script>
+
+    </body>
+</html>

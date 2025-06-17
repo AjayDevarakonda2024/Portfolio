@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="header_left">
+                <h1>Portfolio</h1>
+            </div>
+            <div class="header_right_mobile">
+                <h1 onclick=menuClose()><i class="fa fa-xmark"></i></h1>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="contact.html">CONTACT</a>
+
+            </div>
+            <div class="header_right">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="contact.html">CONTACT</a>
+                <h1 onclick=menu()><i class="fa fa-bars"></i></h1>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main_content">
+                <h1>AJAY DEVARAKONDA</h1>
+                <h3>FRONT-END Developer</h3>
+                <p>I’m a passionate Frontend Developer with a strong foundation in HTML, CSS, JavaScript, and React.js. I specialize in building responsive, user-friendly web interfaces that are both visually appealing and performance-optimized. With a keen eye for detail and a love for clean code, I strive to create seamless user experiences that align with modern design trends and accessibility standards. I’m always eager to learn new technologies and contribute to innovative web projects.</p>
+
+            </div>
+            <div class="main_image">
+                <img src="photo.png" alt="Ajay Devarakonda">
+            </div>
+
+        </div>
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/ajay-devarakonda-08ba01300/" target="_blank"><i class="fab fa-linkedin"></i> </a>
+            <a href="https://www.instagram.com/ajaydevarakondaartz/" target="_blank"><i class="fab fa-instagram"></i> </a>
+            <a href="https://github.com/AjayDevarakonda2024" target="_blank"><i class="fab fa-github"></i> </a>
+        </div>
+
+        <script>
+            let menu = ()=> {
+                document.querySelector('.header_right_mobile').style.display = 'flex';
+            }
+
+            let menuClose = ()=> {
+                document.querySelector('.header_right_mobile').style.display = 'none';
+            }
+        </script>
+    </body>
+</html>
