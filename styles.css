@@ -69,7 +69,7 @@ body {
     z-index: -1;
     padding-top: 20px;
     padding-bottom: 20px;
-
+    height: calc(100vh - 200px);
 }
 
 .main_content {
@@ -86,6 +86,11 @@ body {
 .main_content h1 {
     font-size: 3rem;
     margin: 0;
+    animation-name: slideIn;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+
 }
 
 .main_content h3 {
@@ -93,13 +98,46 @@ body {
     margin: 0;
     color: rgb(0, 208, 255);
     text-shadow: 0px 0px 15px rgb(0, 208, 255);
+    animation-name: slideIn;
+    animation-duration: 800ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
 }
 
 .main_content p {
     text-align: justify;
     font-size: 1.2rem;
     margin: 0;
+    animation-name: fadingIn;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
     
+}
+
+span{
+    color: rgb(0, 208, 255);
+    text-shadow: 0px 0px 10px rgb(0, 208, 255);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadingIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .main_image {
@@ -156,11 +194,45 @@ body {
     background-color: rgb(20, 20, 30);
     border: 2px solid rgb(0, 208, 255);
     border-radius: 20px;
-    padding: 10px;
     position: relative;
     overflow: hidden;
     transition: all 0.5s ease;
     z-index: 0;
+}
+
+.projects_main_card1{
+    animation-name: slideIn;
+    animation-duration: 800ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.projects_main_card2{
+    animation-name: slideIn;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.projects_main_card3{
+    animation-name: slideIn;
+    animation-duration: 1200ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.projects_main_card4{
+    animation-name: slideIn;
+    animation-duration: 1400ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.projects_main_card5{
+    animation-name: slideIn;
+    animation-duration: 1600ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
 }
 
 .projects_main_card:hover {
@@ -285,6 +357,7 @@ body {
 
     .main{
         flex-direction: column-reverse;
+        height: fit-content;
 
     }
 
